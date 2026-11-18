@@ -1,0 +1,49 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Create utils package",
+			"type": "shell",
+			"command": "mkdir utils",
+			"isBackground": false
+		},
+		{
+			"label": "Validate preprocessing script",
+			"type": "shell",
+			"command": "python preprocessing/text_cleaning.py",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Validate balancing script",
+			"type": "shell",
+			"command": "python preprocessing/balance_dataset.py",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check project virtualenv",
+			"type": "shell",
+			"command": "\"E:\\Projects\\HateShield\\venv\\Scripts\\python.exe\" -c \"import sklearn, datasets, transformers; print('venv_ok')\"",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "Check venv python imports",
+			"type": "shell",
+			"command": "cmd /c \"\"E:\\Projects\\HateShield\\venv\\Scripts\\python.exe\" -c \"import sklearn, datasets, transformers; print('venv_ok')\"\"",
+			"isBackground": false,
+			"problemMatcher": []
+		},
+		{
+			"label": "HateShield: Evaluate held-out model",
+			"type": "shell",
+			"command": "E:\\Projects\\HateShield\\venv\\Scripts\\python.exe",
+			"args": [
+				"evaluation\\evaluate_holdout.py"
+			],
+			"isBackground": false,
+			"problemMatcher": []
+		}
+	]
+}

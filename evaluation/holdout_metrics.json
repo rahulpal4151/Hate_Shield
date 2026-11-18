@@ -1,0 +1,19 @@
+{
+  "dataset": "SubTask-B-test.csv",
+  "samples": 4076,
+  "threshold": 0.5,
+  "accuracy": 0.7985770363101079,
+  "precision": 0.3449508489722967,
+  "recall": 0.8143459915611815,
+  "f1": 0.48462021343377276,
+  "confusion_matrix": [
+    [
+      2869,
+      733
+    ],
+    [
+      88,
+      386
+    ]
+  ]
+}
